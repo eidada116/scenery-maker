@@ -68,7 +68,6 @@ $paint-button-outer: #AB656D;
         gap:20px;
         margin:20px;
 
-
         .painter-buttons-container{
             display: flex;
             flex-direction: column;
@@ -119,7 +118,28 @@ $paint-button-outer: #AB656D;
             width:100%;
             height:500px;
             background-color: white;
-            border: #A36862 ridge 5px
+            border: #A36862 ridge 3.5px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            
+
+            .scene-item{
+                width:70px;
+                height:70px;
+                margin: 5px;
+                background-color: #FDFCFE;
+                border: outset 3px #AB656D;
+            }
+            .scene-item:hover{
+                background-color: #E5FC9B;
+                border:#9CC168 outset 3px;
+            }
+            .scene-item:active{
+                background-color: #fff49d;
+                border: #ffba43 outset 3px;
+            }
         }
     }
 }
