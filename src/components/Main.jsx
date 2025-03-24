@@ -2,7 +2,6 @@ import React from 'react';
 import Painter from './windows/Painter';
 import Scenery from './windows/Scenery';
 import '../styles/style.scss';
-import '../scripts/Sound.js';
 
 function Main() {
   return (

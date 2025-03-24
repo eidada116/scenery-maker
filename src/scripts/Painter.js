@@ -14,19 +14,15 @@ export default function initializePainter() {
         container.style.display = 'none';
       });
 
-      painterBtns.forEach(button => {
-        if (button) {
-          button.classList.remove('active');
-        }
-      });
-      const containerId = e.target.id.replace('-btn', '');
+    
+      const containerId = e.currentTarget.id.replace('-btn', '');
       const target = document.getElementById(containerId);
 
       if (target) {
         target.style.display = 'flex';
       }
-
-      e.target.classList.add('active');
     });
   });
+
+  
 }
