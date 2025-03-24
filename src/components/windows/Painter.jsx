@@ -69,37 +69,37 @@ function Painter() {
           </div>
 
           <div id="ground" className='scene-selection'>
-            <button id="ground-one" className=" scene-item sky-item">
+            <button id="ground-one" className=" scene-item ground-item">
               Ground 1
             </button>
-            <button id="ground-two" className=" scene-item sky-item">
+            <button id="ground-two" className=" scene-item ground-item">
               Ground 2
             </button>
-            <button id="ground-three" className="scene-item">
+            <button id="ground-three" className="scene-item ground-item">
               Ground 3
             </button>
           </div>
 
           <div id="flora" className='scene-selection'>
-            <button id="flora-one" className="scene-item">
+            <button id="flora-one" className="scene-item flora-item">
               Flora 1
             </button>
-            <button id="flora-two" className="scene-item">
+            <button id="flora-two" className="scene-item flora-item">
               Flora 2
             </button>
-            <button id="flora-three" className="scene-item">
+            <button id="flora-three" className="scene-item flora-item">
               Flora 3
             </button>
           </div>
 
           <div id="fauna" className='scene-selection'>
-            <button id="fauna-one" className="scene-item">
+            <button id="fauna-one" className="scene-item fauna-item">
               Fauna 1
             </button>
-            <button id="fauna-two" className="scene-item">
+            <button id="fauna-two" className="scene-item fauna-item">
               Fauna 2
             </button>
-            <button id="fauna-three" className="scene-item">
+            <button id="fauna-three" className="scene-item fauna-item">
               Fauna 3
             </button>
           </div>

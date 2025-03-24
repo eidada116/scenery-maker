@@ -7,20 +7,30 @@ export default function initializeSelection() {
     
     const images = document.querySelectorAll('.canvas-image');
 
-
-    //HIDE ALL IMAGES
-    images.forEach(image => {
-        image.style.display = 'block'; 
-        image.style.zIndex = '0'; 
+    //AHHHHHHHHHHHHHHHAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAA
+    document.querySelectorAll('.canvas-image').forEach(image => {
+        image.style.display = 'none'; 
+        image.style.zIndex = '0';
     });
 
-    function resetCategoryZIndex(categoryItems) {
+
+    function zIndexFix(categoryItems) {
         categoryItems.forEach(item => {
             const selectedId = item.id;
             const selectedImage = document.getElementById(selectedId + '-img');
+
+            
             if (selectedImage) {
-                selectedImage.style.zIndex = '0'; 
+
+                const categoryContainer = selectedImage.parentElement; 
+                categoryContainer.querySelectorAll('img').forEach(img => {
+                    img.style.display = 'none'; 
+                });
+
+                selectedImage.style.display = 'block';
+                selectedImage.style.zIndex = '1'; 
             }
+
         });
     }
 
@@ -29,11 +39,20 @@ export default function initializeSelection() {
             const selectedId = e.target.id;
             const selectedImage = document.getElementById(selectedId + '-img'); 
 
-            resetCategoryZIndex(backgroundItem); 
+            zIndexFix(backgroundItem); 
 
+            
             if (selectedImage) {
+                const categoryContainer = selectedImage.parentElement; 
+                categoryContainer.querySelectorAll('img').forEach(img => {
+                    img.style.display = 'none'; 
+                });
+
+                selectedImage.style.display = 'block';
                 selectedImage.style.zIndex = '1'; 
             }
+
+
         });
     });
 
@@ -42,11 +61,18 @@ export default function initializeSelection() {
             const selectedId = e.target.id;
             const selectedImage = document.getElementById(selectedId + '-img'); 
 
-            resetCategoryZIndex(skyItem); 
+            zIndexFix(skyItem); 
 
             if (selectedImage) {
+                const categoryContainer = selectedImage.parentElement; 
+                categoryContainer.querySelectorAll('img').forEach(img => {
+                    img.style.display = 'none'; 
+                });
+
+                selectedImage.style.display = 'block';
                 selectedImage.style.zIndex = '1'; 
             }
+
         });
     });
 
@@ -55,9 +81,15 @@ export default function initializeSelection() {
             const selectedId = e.target.id;
             const selectedImage = document.getElementById(selectedId + '-img'); 
 
-            resetCategoryZIndex(groundItem); 
+            zIndexFix(groundItem); 
 
             if (selectedImage) {
+                const categoryContainer = selectedImage.parentElement; 
+                categoryContainer.querySelectorAll('img').forEach(img => {
+                    img.style.display = 'none'; 
+                });
+
+                selectedImage.style.display = 'block';
                 selectedImage.style.zIndex = '1'; 
             }
         });
@@ -68,10 +100,16 @@ export default function initializeSelection() {
             const selectedId = e.target.id;
             const selectedImage = document.getElementById(selectedId + '-img'); 
 
-            resetCategoryZIndex(floraItem);
+            zIndexFix(floraItem); 
 
             if (selectedImage) {
-                selectedImage.style.zIndex = '0';
+                const categoryContainer = selectedImage.parentElement; 
+                categoryContainer.querySelectorAll('img').forEach(img => {
+                    img.style.display = 'none'; 
+                });
+
+                selectedImage.style.display = 'block';
+                selectedImage.style.zIndex = '1'; 
             }
         });
     });
@@ -81,10 +119,15 @@ export default function initializeSelection() {
             const selectedId = e.target.id;
             const selectedImage = document.getElementById(selectedId + '-img'); 
 
-            resetCategoryZIndex(faunaItem); 
+            zIndexFix(faunaItem); 
 
-            
             if (selectedImage) {
+                const categoryContainer = selectedImage.parentElement; 
+                categoryContainer.querySelectorAll('img').forEach(img => {
+                    img.style.display = 'none'; 
+                });
+
+                selectedImage.style.display = 'block';
                 selectedImage.style.zIndex = '1'; 
             }
         });
