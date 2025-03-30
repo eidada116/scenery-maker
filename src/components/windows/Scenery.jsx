@@ -3,9 +3,12 @@ import TitleBar from '../components2/TitleBar';
 
 import skyOne from '../../img/sky/sky-one.png';
 import skyTwo from '../../img/sky/sky-two.png';
+import skyThree from '../../img/sky/sky-three.png';
 
 import BackgroundOne from '../../img/background/background-one.png';
 import BackgroundTwo from '../../img/background/background-two.png';
+import BackgroundThree from '../../img/background/background-three.png';
+
 
 
 import initializeSelection from '../../scripts/Selection';
@@ -25,10 +28,13 @@ function Scenery() {
           <div id="sky-container">
             <img id="sky-one-img" src={skyOne} className='canvas-image'/>
             <img id="sky-two-img" src={skyTwo} className='canvas-image'/>
+            <img id="sky-three-img" src={skyThree} className='canvas-image'/>
           </div>
           <div id="background-container">
             <img id="background-one-img" src={BackgroundOne} className='canvas-image' />
             <img id="background-two-img" src={BackgroundTwo} className='canvas-image' />
+            <img id="background-three-img" src={BackgroundThree} className='canvas-image' />
+
           </div>
           <div id="ground-container">
 
