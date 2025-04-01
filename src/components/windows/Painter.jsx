@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import TitleBar from '../components2/TitleBar';
 import initializePainter from '../../scripts/Painter.js';
+import initializeSound from '../../scripts/Sound.js';
 
 import Bucket from '../../img/paint.png';
 import Mountain from '../../img/mountain.png';
@@ -8,10 +9,15 @@ import Grass from '../../img/grass.png';
 import Flower from '../../img/flower.png';
 import Cat from '../../img/cat.png';
 
-function Painter() {
-  useEffect(() => {
-    initializePainter();
-  }, []);
+function Painter() {useEffect(() => {
+  
+  initializePainter();
+
+  setTimeout(() => {
+    initializeSound();
+  }, 0);
+}, []);
+
   
   return (
     <div className='painter-window window'>
@@ -27,9 +33,6 @@ function Painter() {
             <button className='painter-button' id='background-btn'>
               <img src={Mountain} alt="Background Button" />
             </button>
-            <button className='painter-button' id='ground-btn'>
-              <img src={Grass} alt="Ground Button" />
-            </button>
             <button className='painter-button' id='flora-btn'>
               <img src={Flower} alt="Flora Button" />
             </button>
@@ -38,7 +41,7 @@ function Painter() {
             </button>
           </div>
 
-          <button className="painter-button" id="done">
+          <button className="" id="done">
             Done
           </button>
         </div>

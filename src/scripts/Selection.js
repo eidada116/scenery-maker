@@ -7,7 +7,6 @@ export default function initializeSelection() {
     
     const images = document.querySelectorAll('.canvas-image');
 
-    //AHHHHHHHHHHHHHHHAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAA
     document.querySelectorAll('.canvas-image').forEach(image => {
         image.style.display = 'none'; 
         image.style.zIndex = '0';
@@ -73,25 +72,6 @@ export default function initializeSelection() {
                 selectedImage.style.zIndex = '1'; 
             }
 
-        });
-    });
-
-    groundItem.forEach(item => {
-        item.addEventListener('click', (e) => {
-            const selectedId = e.target.id;
-            const selectedImage = document.getElementById(selectedId + '-img'); 
-
-            zIndexFix(groundItem); 
-
-            if (selectedImage) {
-                const categoryContainer = selectedImage.parentElement; 
-                categoryContainer.querySelectorAll('img').forEach(img => {
-                    img.style.display = 'none'; 
-                });
-
-                selectedImage.style.display = 'block';
-                selectedImage.style.zIndex = '1'; 
-            }
         });
     });
 

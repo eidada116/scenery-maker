@@ -1,6 +1,7 @@
 * {
     font-family: "Pixelify Sans", sans-serif;
     font-weight:500;
+    //background-color: #FBF4E4;
   }
 
 $main-bg-color: #FFFCEB;
@@ -12,6 +13,28 @@ $title-bar-button: #E5FC9B;
 /*painter colors*/
 $paint-button: #FDFCFE;
 $paint-button-outer: #AB656D;
+
+/*
+.title-screen{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+
+    #title{
+        width:50%;
+    }
+    #start-btn{
+        width:150px;
+        height:50px;
+        background-color:#FDFCFE;
+        border: outset #A36862 3px;
+    }
+    #start-btn:hover{
+        background-color: #E5FC9B;
+        border:#9CC168 outset 3px;
+    }
+}*/
 
 .main-window{
     display: flex;
