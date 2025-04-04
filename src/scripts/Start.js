@@ -2,7 +2,10 @@ export default function startApp(){
     const startbtn = document.getElementById('start-btn');
 
     startbtn.addEventListener('click', ()=>{
-        document.getElementById('title-screen').style.display = 'none';
-        document.getElementById('scene-maker-window').style.display = 'flex';
+
+        const a = document.querySelector('.scene-maker-window');
+        document.querySelector('.title-screen').style.display = 'none';
+        a.style.display = 'flex';
+        
     })
 }

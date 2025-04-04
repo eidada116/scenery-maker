@@ -22,7 +22,5 @@ export default function initializePainter() {
         target.style.display = 'flex';
       }
     });
-  });
-
-  
+  });  
 }
