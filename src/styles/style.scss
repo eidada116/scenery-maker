@@ -14,7 +14,7 @@ $title-bar-button: #E5FC9B;
 $paint-button: #FDFCFE;
 $paint-button-outer: #AB656D;
 
-/*
+
 .title-screen{
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@ $paint-button-outer: #AB656D;
     flex-direction: column;
 
     #title{
-        width:50%;
+        width:80%;
     }
     #start-btn{
         width:150px;
@@ -34,7 +34,7 @@ $paint-button-outer: #AB656D;
         background-color: #E5FC9B;
         border:#9CC168 outset 3px;
     }
-}*/
+}
 
 .main-window{
     display: flex;
@@ -86,7 +86,15 @@ $paint-button-outer: #AB656D;
         }
     }
 }
-
+.scene-maker-window {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    gap:70px;
+    height: 90vh; 
+    width: 100vw;
+    justify-content: center;
+  }
 /*PAINTER WINDOW*/
 
 .painter-window{
@@ -227,4 +235,7 @@ $paint-button-outer: #AB656D;
     
 }
 
-
+/*
+@media screen {
+    
+}*/
